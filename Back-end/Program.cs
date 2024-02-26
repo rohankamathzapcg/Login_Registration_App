@@ -2,7 +2,7 @@ using Back_end.DataAccessLayer;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.   or Dependency Injection
+// Add services to the container or Dependency Injection
 builder.Services.AddControllers();
 builder.Services.AddScoped<AuthInterFace,AuthClass>();
 
