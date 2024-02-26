@@ -16,12 +16,12 @@ namespace Back_end.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Registration(RegisterRequest request)
+        public async Task<IActionResult> Registration(RegistrationRequest request)
         {
             RegistrationResponse response = new RegistrationResponse();
             try
             {
-
+                response= await _authInterface.Registration(request);
             }
             catch (Exception e)
             {

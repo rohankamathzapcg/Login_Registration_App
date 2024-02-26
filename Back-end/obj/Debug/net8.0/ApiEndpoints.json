@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Microsoft.AspNetCore.Identity.Data.RegisterRequest",
+        "Type": "Back_end.Models.RegistrationRequest",
         "IsRequired": true
       }
     ],
