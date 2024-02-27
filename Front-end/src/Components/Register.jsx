@@ -152,7 +152,11 @@ const Register = () => {
             </form>
           </div>
           <div className="buttons">
-            <Button className="btn" color="primary">
+            <Button
+              className="btn"
+              color="primary"
+              onClick={() => navigate("/login")}
+            >
               Login
             </Button>
             <Button
