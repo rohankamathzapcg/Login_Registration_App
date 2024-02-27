@@ -1,17 +1,28 @@
 ﻿using Back_end.Models;
 using MySql.Data.MySqlClient;
+using Npgsql;
 using System.Data.Common;
 
 namespace Back_end.DataAccessLayer
 {
+    //For MYSQL
+    //"MySqlDBConnection": "Server=localhost;User=root;Password='Rohan@1234';Database=crudoperations; SslMode=None; Port=3306; Allow User Variables=True;"
+
+    //For PostgresSQL
+    //"WebApiPostgresDatabase": "Host=localhost; Database=Webapplication; Username=postgres; Password=1234"
     public class AuthClass : AuthInterFace
     {
         public readonly IConfiguration configuration;
-        public readonly MySqlConnection mySqlConnection;
+        //for PostgresSQL
+        private readonly NpgsqlConnection _npgsqlConnection;
+        //for MYSQL
+        //public readonly MySqlConnection mySqlConnection;
         public AuthClass(IConfiguration configuration)
         {
             this.configuration = configuration;
-            mySqlConnection = new MySqlConnection(configuration["ConnectionStrings:MySqlDBConnection"]);
+            _npgsqlConnection = new NpgsqlConnection(configuration["ConnectionStrings:WebApiPostgresDatabase"]);
+            
+            //mySqlConnection = new MySqlConnection(configuration["ConnectionStrings:MySqlDBConnection"]);
         }
 
         public async Task<LoginResponse> Login(LoginRequests request)
@@ -23,19 +34,27 @@ namespace Back_end.DataAccessLayer
             try
             {
                 // Checks if MySQL Database Connection is Open or not
-                if (mySqlConnection.State != System.Data.ConnectionState.Open)
+                //if (mySqlConnection.State != System.Data.ConnectionState.Open)
+                //{
+                    //await mySqlConnection.OpenAsync();
+                //}
+
+                // Checks if PostgreSQL Database Connection is Open or not
+                if (_npgsqlConnection.State != System.Data.ConnectionState.Open)
                 {
-                    await mySqlConnection.OpenAsync();
+                    await _npgsqlConnection.OpenAsync();
                 }
 
                 string sqlQuery = @"SELECT * FROM userdetails WHERE username=@username and password=@password and role=@role";
-                using (MySqlCommand command = new MySqlCommand(sqlQuery, mySqlConnection))
+                using (NpgsqlCommand command = new NpgsqlCommand(sqlQuery, _npgsqlConnection))
+                //using (MySqlCommand command = new MySqlCommand(sqlQuery, mySqlConnection))
                 {
                     command.CommandType = System.Data.CommandType.Text;
                     command.CommandTimeout = 180;
                     command.Parameters.AddWithValue("@username", request.UserName);
                     command.Parameters.AddWithValue("@password", request.Password);
                     command.Parameters.AddWithValue("@role", request.Role);
+
                     //Getting the row and stoing it in reader object
                     using (DbDataReader reader = await command.ExecuteReaderAsync())
                     {
@@ -59,8 +78,11 @@ namespace Back_end.DataAccessLayer
             }
             finally
             {
-                await mySqlConnection.CloseAsync();
-                await mySqlConnection.DisposeAsync();
+                await _npgsqlConnection.CloseAsync();
+                await _npgsqlConnection.DisposeAsync();
+
+                //await mySqlConnection.CloseAsync();
+                //await mySqlConnection.DisposeAsync();
             }
             return loginResponse;
 
@@ -82,13 +104,20 @@ namespace Back_end.DataAccessLayer
                 }
 
                 // Checks if MySQL Database Connection is Open or not
-                if (mySqlConnection.State != System.Data.ConnectionState.Open)
+                //if (mySqlConnection.State != System.Data.ConnectionState.Open)
+                //{
+                //await mySqlConnection.OpenAsync();
+                //}
+
+                // Checks if PostgreSQL Database Connection is Open or not
+                if (_npgsqlConnection.State != System.Data.ConnectionState.Open)
                 {
-                    await mySqlConnection.OpenAsync();
+                    await _npgsqlConnection.OpenAsync();
                 }
 
                 string sqlQuery = @"INSERT INTO userdetails (username,password,role) VALUES (@username, @password, @role)";
-                using (MySqlCommand command = new MySqlCommand(sqlQuery, mySqlConnection))
+                using (NpgsqlCommand command = new NpgsqlCommand(sqlQuery, _npgsqlConnection))
+                //using (MySqlCommand command = new MySqlCommand(sqlQuery, mySqlConnection))
                 {
                     command.CommandType = System.Data.CommandType.Text;
                     command.CommandTimeout = 180;
@@ -111,8 +140,11 @@ namespace Back_end.DataAccessLayer
             }
             finally
             {
-                await mySqlConnection.CloseAsync();
-                await mySqlConnection.DisposeAsync();
+                await _npgsqlConnection.CloseAsync();
+                await _npgsqlConnection.DisposeAsync();
+
+                //await mySqlConnection.CloseAsync();
+                //await mySqlConnection.DisposeAsync();
             }
             return registrationResponse;
         }
