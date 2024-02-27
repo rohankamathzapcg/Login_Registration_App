@@ -3,6 +3,7 @@ import "./index.css";
 import Register from "./Components/Register";
 import Login from "./Components/Login";
 import HomePage from "./Components/HomePage";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (

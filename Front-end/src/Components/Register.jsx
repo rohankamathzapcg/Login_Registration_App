@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import TextField from "@material-ui/core/TextField";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -5,8 +6,10 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
 import { useState } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 
 const Register = () => {
+  const navigate = useNavigate();
   const [registration, setRegistration] = useState({
     username: "",
     pass: "",
@@ -46,18 +49,44 @@ const Register = () => {
       registration.pass !== "" &&
       registration.cpass !== ""
     ) {
+      let data = {
+        userName: registration.username,
+        password: registration.pass,
+        confirmPassword: registration.cpass,
+        role: registration.roleValue,
+      };
       axios
-        .post("https://localhost:44376/api/Auth/Registration", registration)
-        .then((result) => console.log(result))
+        .post("https://localhost:44376/api/Auth/Registration", data)
+        .then((result) => {
+          if (result.data.isSuccess) {
+            toast.success(result.data.message, {
+              theme: "dark",
+              autoClose: 1000,
+            });
+
+            setTimeout(() => {
+              navigate("/login");
+            }, 2000);
+          } else {
+            toast.error(result.data.message, {
+              theme: "dark",
+              autoClose: 1000,
+            });
+          }
+        })
         .catch((err) => console.log(err));
     } else {
-      console.log("Not Acceptable");
+      toast.error("Enter all Fields", {
+        theme: "dark",
+        autoClose: 1000,
+      });
     }
   };
   return (
     <>
       <div className="Signup-Container">
         <div className="Signup-SubContainer">
+          <ToastContainer />
           <div className="header">Register/Signup</div>
           <div className="FormBody">
             <form className="formData">
