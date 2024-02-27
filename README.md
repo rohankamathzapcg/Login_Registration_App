@@ -12,7 +12,6 @@ This is a simple web application for user authentication and registration. It al
 
 - User Registration: Users can create a new account by providing a username and password.
 - User Login: Existing users can log in with their credentials.
-- Authentication: Authentication is implemented using JWT (JSON Web Tokens) for secure access to protected routes.
 - Error Handling: Comprehensive error handling for login and registration forms.
 - Responsive Design: The frontend is built with Material UI components for a responsive and intuitive user interface.
 
