@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\dataaccesslayer\\authclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:dataaccesslayer\\authclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|c:\\users\\rohankamath\\onedrive - zapcom solutions pvt. ltd\\documents\\project\\login_registation_app\\back-end\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FBAACFA1-166B-4350-8C94-77D8BE8220BB}|Back-end.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +43,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:42:48.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "Models\\Registration.cs",
+              "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Models\\Registration.cs",
+              "RelativeToolTip": "Models\\Registration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:42:45.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\Login.cs",
+              "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Models\\Login.cs",
+              "RelativeToolTip": "Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:42:43.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA6AAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-27T05:15:23.819Z",
+              "WhenOpened": "2024-02-27T09:42:21.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthClass.cs",
+              "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\DataAccessLayer\\AuthClass.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\AuthClass.cs",
+              "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\DataAccessLayer\\AuthClass.cs",
+              "RelativeToolTip": "DataAccessLayer\\AuthClass.cs",
+              "ViewState": "AQIAAI0AAAAAAAAAAAApwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-27T09:32:49.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\RohanKamath\\OneDrive - ZapCom Solutions Pvt. ltd\\Documents\\Project\\Login_Registation_App\\Back-end\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-27T09:30:09.727Z",
               "EditorCaption": ""
             }
           ]
